@@ -243,12 +243,14 @@ print("=== 函数作用域 ===")
 global_var = "全局变量"
 
 def scope_demo():
+    # 先声明全局变量
+    global global_var
+
     local_var = "局部变量"
     print(f"函数内部访问全局变量: {global_var}")
     print(f"函数内部访问局部变量: {local_var}")
     
-    # 修改全局变量需要使用global关键字
-    global global_var
+    # 修改全局变量
     global_var = "修改后的全局变量"
     print(f"修改后的全局变量: {global_var}")
 
