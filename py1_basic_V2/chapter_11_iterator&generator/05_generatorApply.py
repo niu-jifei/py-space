@@ -114,5 +114,10 @@ print(result1)
 # 生成器表达式（和列表推导式很像，不要搞混）
 result2 = (n * 2 for n in nums)
 
+
 for item in result2:
     print(item)
+
+# result2 是一个生成器对象， 只能用一次， 不能重复遍历
+result = list(result2)
+print(result)
