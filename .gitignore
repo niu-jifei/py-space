@@ -11,3 +11,34 @@
 .idea
 .gradio
 */*.pyc
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Conda environments
+.conda
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/# PyCharm debugger
+.vscode/
+
