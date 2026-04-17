@@ -13,7 +13,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 with open("rt.txt", "rt+", encoding="utf-8") as file:
     # seek(offset, whence)方法：用于改变文件对象指针的位置，参数说明如下：
-    #   offset：偏移量，要移动多少距离
+    #   offset：偏移量，要移动多少距离，字节偏移量
     #   whence：参考点，从哪里开始计算偏移，有三种取值：
     #       0：从文件开头计算（默认值）
     #       1：从当前位置计算
