@@ -1,15 +1,20 @@
 import asyncio
+import time
 
 
 async def work():
     print("work开始")
     print("work执行中......")
-    # await去等待一个协程对象（靠asyncio.sleep方法，返回一个协程对象）
     """
+    await去等待一个协程对象（靠asyncio.sleep方法，返回一个协程对象）
     asyncio.sleep 会让出 CPU，让出 CPU，让出时间片
     事件循环检查是否有其他就绪的协程
     此时 main 协程正在 await work()，它是挂起状态，不是就绪状态
     没有其他协程可运行，所以只能等待 5 秒
+
+    res = time.sleep(5)
+    阻塞整个线程，其他协程无法执行
+
     """
     res = await asyncio.sleep(5, result="睡眠结束了")
     print(res)
